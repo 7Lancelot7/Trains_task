@@ -62,7 +62,7 @@ def read():
 
 
 # list of trains passing between stations
-def ways(mas):  
+def ways(mas):
     dic = {}
     for i in mas:
         if (i[1], i[2]) not in dic:
@@ -141,7 +141,6 @@ def cost(path, dic, mas):
         tmp_min_cost = 0
 
     print('min cost->', tofixed(min_cost, 2))
-    print('------------------------')
     print('trains->', num_trains)
     print('------------------------')
 
@@ -155,11 +154,6 @@ def main():
     path = hamilton(matrix, len(vertex), 1909, [])
     path1 = hamilton(matrix, len(vertex), 1981, [])
 
-    print(path)
-    print(path1)
-    print('------------------------')
-    print('path ->', path)
-    print('------------------------')
     cost(path, dic, mas)
     time(path1, dic, mas)
 
