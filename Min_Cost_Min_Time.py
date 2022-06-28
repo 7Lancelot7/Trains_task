@@ -158,5 +158,4 @@ def main():
     time(path1, dic, mas)
 
 
-if __name__ == '__main__':
-    main()
+main()
